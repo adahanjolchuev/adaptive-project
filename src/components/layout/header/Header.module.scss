@@ -1,0 +1,151 @@
+.Header {
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: clamp(10px, 0.304rem + 1.6vw, 30px) 0;
+    img {
+      width: clamp(110px, 5.56rem + 2.74vw, 130px);
+      height: auto;
+      cursor: pointer;
+      @media (max-width: 768px) {
+        width: clamp(90px, 4.732rem + 4.46vw, 110px);
+      }
+    }
+    .headerRight {
+      display: flex;
+      align-items: center;
+      gap: clamp(20px, -4.01rem + 10.94vw, 100px);
+      nav {
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        gap: clamp(20px, -0.722rem + 4.1vw, 50px);
+        @media (max-width: 768px) {
+          display: none;
+        }
+        a {
+          color: white;
+          text-decoration: none;
+          font-family: sans-serif;
+          font-size: clamp(15px, 0.872rem + 0.14vw, 16px);
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      .btns {
+        display: flex;
+        align-items: center;
+        gap: clamp(10px, -0.032rem + 1.37vw, 20px);
+        @media (max-width: 768px) {
+          gap: clamp(10px, -0.268rem + 4.46vw, 30px);
+        }
+        button {
+          color: #ffbe0b;
+          border: solid 3px #ffbe0b;
+          padding: clamp(5px, -0.016rem + 0.68vw, 10px)
+            clamp(10px, -0.032rem + 1.37vw, 20px);
+          font-size: clamp(13px, 0.681rem + 0.27vw, 15px);
+          @media (max-width: 768px) {
+            font-size: clamp(10px, 0.491rem + 0.67vw, 13px);
+          }
+          border-radius: 5px;
+          font-weight: bold;
+          background: transparent;
+          transition: ease-in-out 0.4s;
+          &:hover {
+            background: #ffbe0b;
+            color: black;
+            font-weight: bold;
+            font-size: clamp(13px, 0.681rem + 0.27vw, 15px);
+          }
+        }
+        .burgerMenu {
+          width: 30px;
+          height: 30px;
+          margin-top: 15px;
+          display: none;
+          @media (max-width: 768px) {
+            display: block;
+            justify-content: center;
+            align-items: center;
+          }
+          .burger {
+            width: clamp(20px, 0.804rem + 2.23vw, 30px);
+            height: 2px;
+            background: white;
+            position: relative;
+            transition: all 0.4s ease-in-out;
+            &::before {
+              position: absolute;
+              content: "";
+              width: clamp(20px, 0.804rem + 2.23vw, 30px);
+              height: 2.5px;
+              top: clamp(8px, 0.411rem + 0.45vw, 10px);
+              background: white;
+              transition: all 0.4s ease-in-out;
+            }
+
+            &::after {
+              position: absolute;
+              content: "";
+              width: clamp(20px, 0.804rem + 2.23vw, 30px);
+              height: 2.5px;
+              top: clamp(16px, 0.821rem + 0.89vw, 20px);
+              background: white;
+              transition: all 0.4s ease-in-out;
+            }
+
+            &.active {
+              background: transparent;
+              transition: all ease-in-out 0.2s;
+              &::before {
+                top: clamp(8px, 0.411rem + 0.45vw, 10px);
+                transform: rotate(45deg);
+                transition: all ease-in-out 0.2s;
+              }
+              &::after {
+                top: clamp(8px, 0.411rem + 0.45vw, 10px);
+                transform: rotate(-45deg);
+                transition: all ease-in-out 0.2s;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .Modalka {
+    display: none;
+    position: fixed;
+    right: -100%;
+    margin-inline: 25px;
+    z-index: 11;
+    @media (max-width: 768px) {
+      display: block;
+    }
+    width: clamp(120px, 3.929rem + 17.86vw, 200px);
+    height: clamp(150px, 2.679rem + 33.48vw, 300px);
+    border: solid 3px white;
+    background: #0e0e2c;
+    border-radius: 10px;
+    nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-top: clamp(25px, -0.446rem + 10.04vw, 70px);
+      a {
+        color: white;
+        font-size: clamp(14px, 0.607rem + 1.34vw, 20px);
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

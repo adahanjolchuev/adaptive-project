@@ -1,0 +1,59 @@
+.input {
+  display: flex;
+  align-items: center;
+  border: solid 3px #626276;
+  border-radius: 15px;
+  margin: clamp(10px, -0.032rem + 1.37vw, 20px) 0;
+  gap: 10px;
+  width: clamp(250px, 2.475rem + 27.36vw, 450px);
+  padding: clamp(0rem, -0.657rem + 1.37vw, 10px)
+    clamp(10px, -0.032rem + 1.37vw, 20px);
+  .icon {
+    font-size: 35px;
+    color: #626276;
+  }
+  input {
+    background: none;
+    border: none;
+    outline: none;
+    color: #626276;
+    font-size: clamp(10px, -0.032rem + 1.37vw, 20px);
+  }
+  button {
+    padding: clamp(5px, -0.345rem + 1.37vw, 15px)
+      clamp(10px, -0.032rem + 1.37vw, 20px);
+    width: 120px;
+    background: #ffbe0b;
+    color: black;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: clamp(11px, 0.425rem + 0.55vw, 15px);
+    font-weight: 700;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 768px) {
+  .input {
+    width: clamp(250px, 8.929rem + 33.48vw, 400px);
+    padding: clamp(5px, 0.089rem + 1.12vw, 10px)
+      clamp(10px, 0.179rem + 2.23vw, 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: clamp(5px, 0.089rem + 1.12vw, 10px);
+    .icon {
+      font-size: 35px;
+    }
+    input {
+      font-size: clamp(12px, 0.482rem + 1.34vw, 18px);
+      width: clamp(120px, 4.821rem + 13.39vw, 180px);
+    }
+    button {
+      padding: 10px clamp(10px, 0.402rem + 1.12vw, 15px);
+      font-size: clamp(10px, 0.491rem + 0.67vw, 13px);
+    }
+  }
+}

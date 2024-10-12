@@ -1,0 +1,94 @@
+.SectionOne {
+  padding: 50px 0;
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: clamp(20px, -0.717rem + 4.1vw, 50px);
+    .leftBlock {
+      width: clamp(580px, -9.652rem + 95.63vw, 1280px);
+      display: flex;
+      flex-direction: column;
+      gap: clamp(10px, 0.297rem + 0.68vw, 15px);
+    }
+    .rightBlock {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: clamp(10px, -0.686rem + 2.73vw, 30px);
+      .blog {
+        padding: clamp(10px, -0.031rem + 1.37vw, 20px);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        transition: 0.3s;
+        div {
+          width: clamp(40px, 0.533rem + 4.1vw, 70px);
+          height: clamp(40px, 0.533rem + 4.1vw, 70px);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 10px;
+          img {
+            width: clamp(20px, -0.061rem + 2.73vw, 40px);
+            height: auto;
+          }
+        }
+        h3 {
+          color: white;
+          font-size: clamp(15px, 0.61rem + 0.68vw, 20px);
+        }
+        p {
+          color: #868695;
+          font-size: clamp(12px, 0.488rem + 0.55vw, 1rem);
+          line-height: clamp(18px, 0.469rem + 1.37vw, 28px);
+        }
+        &:hover {
+          background: #1a1a3d;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .SectionOne {
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .leftBlock {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: clamp(290px, 4.286rem + 69.2vw, 600px);
+      }
+      .rightBlock {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: clamp(20px, 0.357rem + 4.46vw, 40px);
+        .blog {
+          padding: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          div {
+            width: clamp(40px, 2.054rem + 2.23vw, 50px);
+            height: clamp(40px, 2.054rem + 2.23vw, 50px);
+            img {
+              width: clamp(25px, 1.339rem + 1.12vw, 30px);
+              height: auto;
+            }
+          }
+          h3 {
+            text-align: center;
+            font-size: clamp(12px, 0.616rem + 0.67vw, 15px);
+          }
+          p {
+            font-size: clamp(10px, 0.536rem + 0.45vw, 12px);
+          }
+        }
+      }
+    }
+  }
+}

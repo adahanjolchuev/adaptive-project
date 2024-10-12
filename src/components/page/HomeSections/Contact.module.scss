@@ -1,0 +1,10 @@
+.Contact {
+  padding: clamp(20px, -0.106rem + 6.78vw, 100px) 0;
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: clamp(10px, 0.456rem + 0.85vw, 20px);
+  }
+}

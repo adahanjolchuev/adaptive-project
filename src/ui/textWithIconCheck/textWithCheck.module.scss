@@ -1,0 +1,26 @@
+.span {
+  display: flex;
+  align-items: center;
+  gap: clamp(10px, 0.296rem + 0.68vw, 15px);
+  justify-content: start;
+  .icon {
+    color: #3a86ff;
+    font-size: clamp(10px, 0.609rem + 0.68vw, 20px);
+  }
+  .h4 {
+    font-size: clamp(10px, 0.362rem + 0.55vw, 14px);
+    color: white;
+  }
+}
+
+@media (max-width: 768px) {
+  .span {
+    gap: 5px;
+    .icon {
+      font-size: clamp(15px, 0.714rem + 1.12vw, 20px);
+    }
+    .h4 {
+      font-size: clamp(11px, 0.509rem + 0.89vw, 15px);
+    }
+  }
+}

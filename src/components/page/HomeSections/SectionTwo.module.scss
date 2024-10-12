@@ -1,0 +1,57 @@
+.SectionTwo {
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: clamp(30px, 0.564rem + 2.73vw, 50px);
+    .mainPhoto {
+      width: clamp(300px, -7.48rem + 54.64vw, 700px);
+    }
+    .blogRight {
+      display: flex;
+      flex-direction: column;
+      gap: clamp(20px, -0.717rem + 4.1vw, 50px);
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: clamp(5px, -0.671rem + 2.05vw, 20px);
+      }
+      p {
+        width: 300px;
+        margin-left: clamp(25px, 0.907rem + 1.37vw, 35px);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .SectionTwo {
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: clamp(30px, 0.536rem + 6.7vw, 60px);
+      .mainPhoto {
+        width: clamp(200px, -0.893rem + 66.96vw, 500px);
+      }
+      .blogRight {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: clamp(20px, 0.357rem + 4.46vw, 40px);
+        width: clamp(290px, 0.268rem + 89.29vw, 690px);
+        div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        p {
+          margin-left: clamp(50px, 1.786rem + 6.7vw, 80px);
+          width: clamp(200px, 8.036rem + 22.32vw, 300px);
+          text-align: start;
+        }
+      }
+    }
+  }
+}

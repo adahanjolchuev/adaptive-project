@@ -1,0 +1,41 @@
+.SectionThree {
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: clamp(20px, -0.717rem + 4.1vw, 50px);
+    img {
+      width: clamp(300px, -7.48rem + 54.64vw, 700px);
+      height: auto;
+    }
+    .blogLeft {
+      display: flex;
+      flex-direction: column;
+      gap: clamp(10px, -0.686rem + 2.73vw, 30px);
+      p {
+        margin-top: clamp(10px, -0.031rem + 1.37vw, 20px);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .SectionThree {
+    padding: 50px 0;
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: clamp(250px, 8.929rem + 33.48vw, 400px);
+      }
+      .blogLeft {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}

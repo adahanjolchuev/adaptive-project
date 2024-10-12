@@ -1,0 +1,21 @@
+.h3 {
+  background: #172656;
+  color: #3a86ff;
+  font-size: clamp(10px, 0.494rem + 0.27vw, 12px);
+  width: 100%;
+  max-width: clamp(180px, 9.935rem + 2.74vw, 200px);
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .h3 {
+    font-size: clamp(10px, 0.536rem + 0.45vw, 12px); 
+    max-width: clamp(180px, 10.357rem + 4.46vw, 200px); 
+    width: 100%;
+    padding: clamp(5px, 0.089rem + 1.12vw, 10px);
+  }
+}

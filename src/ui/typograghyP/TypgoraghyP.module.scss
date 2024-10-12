@@ -1,0 +1,13 @@
+p {
+  color: #868695;
+  font-size: clamp(12px, 0.553rem + 0.41vw, 15px);
+  line-height: clamp(18.8px, 0.518rem + 1.37vw, 28.8px);
+}
+
+@media (max-width: 768px) {
+  p {
+    font-size: clamp(13px, 0.679rem + 0.67vw, 16px); 
+    text-align: center;
+    line-height: 25px; 
+  }
+}
